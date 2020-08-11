@@ -2,10 +2,6 @@
 import bs4
 import requests
 
-# recipe_website = "https://www.bonappetit.com/recipe/spiced-lamb-burger"
-# recipe_website = "https://www.bonappetit.com/recipe/manoushe-with-zaatar-oil-tomatoes-and-cucumber"
-# recipe_website = "https://www.bonappetit.com/recipe/bruleed-bourbon-maple-pumpkin-pie"
-
 class BonAppetit():
     website = "BonAppetit"
     general_url = "bonappetit.com"
