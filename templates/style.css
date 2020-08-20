@@ -1,0 +1,30 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.title {
+    margin: auto;
+    flex: 1 0 51%;
+}
+
+.img-container {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 50%;
+    min-height: 50%;
+    max-height: 75%;
+    padding: 1em;
+    flex: 1 0 51%;
+}
+
+img {
+    object-fit: cover;
+}
+ 
