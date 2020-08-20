@@ -12,10 +12,10 @@ class DimitrasDishes():
         self.soup = bs4.BeautifulSoup(self.document.text, features="html.parser")
 
     def get_food_image(self):
-        return self.soup.find(attrs={"class": "recipe-image"}).find_next().attrs['data-src']
+        return self.soup.find(attrs={"class": "entry-content"}).find("img").attrs["src"]
 
     def get_title(self):
-        return self.soup.find(attrs={"class": "recipe-title-header"}).find_next().text
+        return self.soup.find(attrs={"class": "entry-title"}).text
 
     def _filter_li_html_for_ingredients(self, ing):
         try:
@@ -24,10 +24,9 @@ class DimitrasDishes():
             return False
 
     def get_ingredients(self):
-        lis = list(filter(lambda x: not bool(x.attrs), self.soup.find(attrs={"class": "recipe-ingredients"}).children))[0]
-        return [x.text.encode('ascii', 'ignore').decode('utf-8') for x in lis.children]
+        ingredients_div = self.soup.find(attrs={"class": "mv-create-ingredients"}).find_all("li")
+        return [x.text.encode('ascii', 'ignore').decode('utf-8') for x in ingredients_div]
 
     def get_steps(self):
-        unicode_ = "\u200b"
-        thing = [x.text.find(unicode_) for x in self.soup.find_all(attrs={"class": "step"})]
-        print(thing)
+        steps_div = self.soup.find(attrs={"class": "mv-create-instructions"}).find_all("li")
+        return [x.text for x in steps_div]
