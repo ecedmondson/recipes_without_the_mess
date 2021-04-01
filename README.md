@@ -14,7 +14,11 @@ The maintainer of this tool does not take credit for the creation or maintenance
 the maintainer of this tool does not guarantee the quality of any recipe scraped from any source.
 
 If your recipe has been scraped and you do not wish for people to access your recipe without using your website,
-please contact the maintainer. The maintainer is more than happy to delete the recipe. 
+please contact the maintainer. The maintainer is more than happy to delete the recipe.
+
+# Recipe Sources
+
+Scrapers currently exist for these recipe sources: Bon Appetit, Dmitra’s Dishes, Epicurious, Food52, Leite Culinaria, New York Times, Oh She Glows, Serious Eats
 
 # Future Features
 
