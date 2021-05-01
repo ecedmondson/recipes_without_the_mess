@@ -2,12 +2,12 @@
 li = "    <li>{ITEM}</li>\n"
 
 def ordered(items):
-    items.insert(0, "<ol>\n")
+    items.insert(0, '<ol class="list_items">\n')
     items.append("</ol>\n")
     return items
 
 def unordered(items):
-    items.insert(0, "<ul>\n")
+    items.insert(0, '<ul class="list_items">\n')
     items.append("</ul>\n")
     return items
 
