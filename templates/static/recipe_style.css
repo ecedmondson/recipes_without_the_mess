@@ -1,0 +1,30 @@
+#recipe_title {
+    font-family: 'Monaco', monospace;
+    color: #191d6e;
+    text-align: center;
+}
+
+#recipe_photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;i
+}
+
+.image_container {
+    padding-top: .25 em;
+    border: 2px;
+    border-radius: 7px;
+}
+
+.list_header {
+    font-family: 'Monaco', monospace;
+    color: #191d6f;
+    text-align: center;
+}
+
+.list_items {
+   font-family: 'Monaco', monospace;
+   color: #187er4;
+   text_align: center;
+}
