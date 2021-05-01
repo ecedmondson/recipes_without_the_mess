@@ -3,17 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>Recipe Page {TITLE}</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="recipe_style.css">
 </head>
 
 <body>
-    <h1><div class="title">Recipe: {TITLE}</div>
-	    <div class="img-containeri"><img src="{IMG}" alt="Recipe image retrieval failed. Imagine some food."></div>
+    <h1><div class="title" id="recipe_title">Recipe: {TITLE}</div>
+	    <div class="image_container" id="recipe_photo">
+		    <img src="{IMG}" alt="Recipe image retrieval failed. Imagine some food.">
+	    </div>
     </h1>
     <div class="ingredients">
+    <p class="list_header">Ingredients List:</p>
         {INGREDIENTS}
     </div>
     <div class="steps">
+    <p class="list_header">Recipe Steps:</p>
         {STEPS}
     </div>
 </body>
